@@ -1,0 +1,162 @@
+body{
+	background-color:#333;
+}
+#wrap{
+	width:1000px;
+	position:relative;
+	overflow:hidden;
+	margin:auto;
+	height:590px;
+	background:#ffffff;
+	animation:wrap 10s linear infinite;
+}
+@keyframes wrap{
+	 0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
+}
+/*--------HEART---------*/
+#heart1,#heart2{
+	position:absolute;
+	z-index:2;
+	bottom:10px;
+	width:50px;
+	height:50px;
+}
+#heart1{
+	left:10px;
+	animation:heart_Up 7s linear infinite;
+}
+#heart2{
+	right:50px;
+	animation:heart_Up 8s linear infinite;
+}
+@keyframes heart_Up{
+	25%{transform:translate(25px,-250px) rotateY(-180deg);}
+	50%{transform:translate(-25px,-500px) rotateY(180deg);}
+	75%{transform:translate(25px,-750px) rotateY(-180deg);}
+	100%{transform:translate(-25px,-1000px) rotateY(180deg);}
+}
+/*--------DOG---------*/
+.dog1{
+	position:absolute;
+	z-index:1;
+	right:5px;
+	top:5px;
+}
+#dog1_1,#dog2_1{
+	animation-name:dog1_ani,dog_fly;
+	animation-timing-function:none,linear;
+	animation-duration:0.3s,15s;
+	animation-delay:0s,0s;
+	animation-iteration-count:infinite;
+}
+#dog1_2,#dog2_2{
+	animation-name:dog1_ani,dog_fly;
+	animation-timing-function:none,linear;
+	animation-duration:0.3s,15s;
+	animation-delay:0.15s,0s;
+	animation-iteration-count:infinite;
+}
+@keyframes dog1_ani{
+	0%{opacity:0;  }
+	50%{opacity:1;}
+	100%{opacity:0; }
+}
+@keyframes dog_fly{
+	49%{transform:translate(-1000px,0px);}
+	50%{transform:translate(-1000px,0px) rotateY(180deg);}
+	51%{transform:translate(-1000px,300px) rotateY(180deg);}
+	100%{transform:translate(1000px,550px) rotateY(180deg);}
+}
+.dog2{
+	position:absolute;
+	z-index:1;
+	right:100px;
+	top:5px;
+}
+/*---------------TEXT--------------------*/
+.text h1{
+	position:absolute;
+	opacity:0;
+	left:50px;
+	top:50px;
+	animation:text_run 6s linear 1;
+}
+.text h1:nth-child(2){
+	animation-delay:3s;
+}
+.text h1:nth-child(3){
+	animation-delay:6s;
+}
+.text h1:nth-child(4){
+	animation-delay:9s;
+}
+.text h1:nth-child(5){
+	animation-delay:12s;
+}
+.text h1:nth-child(6){
+	animation-delay:15s;
+}
+.text h1:nth-child(7){
+	animation-delay:18s;
+}
+.text h1:nth-child(8){
+	animation-delay:21s;
+}
+.text h1:nth-child(9){
+	animation-delay:24s;
+}
+.text h1:nth-child(10){
+	animation-delay:27s;
+}
+.text h1:nth-child(11){
+	animation-delay:30s;
+}
+.text h1:nth-child(12){
+	animation-delay:33s;
+}
+.text h1:nth-child(13){
+	animation-delay:36s;
+}
+.text h1:nth-child(14){
+	animation-delay:39s;
+}
+.text h1:nth-child(15){
+	animation-delay:42s;
+}
+@keyframes text_run{
+	0%{opacity:0;}
+	50%{opacity:1;transform:translate(200px,200px);font-size:80px;}
+	70%{opacity:0;}
+	100%{opacity:0;}
+	
+}
+/***********CARD***************/
+#card{
+	position:absolute;
+	border-radius:5%;
+	width:500px;
+	height:400px;
+	left:270px;
+	top:80px;
+	opacity:0;
+	animation-name:card_play,card_fix;
+	animation-duration:10s,6s;
+	animation-iteration-count:1,infinite;
+	animation-timing-function:linear,linear;
+	animation-delay:46.5s,46.5s;
+}
+@keyframes card_play{
+	0%{opacity:1;width:0px;height:0px;}
+	100%{width:500px;height:400px;opacity:1}
+}
+@keyframes card_fix{
+	0%{opacity:1;transform:rotate(-25deg);}
+	25%{transform:rotate(0deg);}
+	50%{transform:rotate(25deg);}
+	75%{transform:rotate(0deg);}
+	100%{opacity:1;transform:rotate(-25deg);}
+}
