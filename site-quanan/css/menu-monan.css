@@ -1,0 +1,45 @@
+#content{
+	width:88%;
+	margin-left:12%;
+	background-color:#ffffff;
+}
+#content > h1{
+	font-family:"Showcard Gothic";
+	color:#FDC22D;
+	margin:0px;
+	padding:15px;
+}
+#content > p{
+	padding: 0px 0px 0px 15px;
+	color:#363636;	
+	font-weight:500	;
+}
+#sub-ct{
+	width:100%;
+}
+.sub-ct-col{
+	width:25%;
+	float:left;
+	overflow:hidden;
+}
+.sub-ct-col:hover img,.sub-ct-col:hover p{
+	transform:scale(1.2);
+}
+.sub-ct-col > img{
+	display:block;
+	width:90%;
+	height:150px;
+	margin:auto;
+	transition:all 0.2s ease-in-out ;
+}
+.sub-ct-col > p{
+	text-align:center;
+	margin:0px;
+	font-size:12px;
+	line-height:40px;
+	font-family:"Showcard Gothic";
+	color:#C01111;
+	overflow:hidden;
+	transition:all 0.2s ease-in-out ;
+}
+

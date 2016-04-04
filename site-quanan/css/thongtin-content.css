@@ -1,0 +1,32 @@
+#content{
+	margin-left:12%;
+	width:88%;
+	min-height:550px;
+	background-color:#ffffff;
+}
+#content p:nth-child(1){
+	font-family:"Showcard Gothic";
+	font-size:32px;
+	color:#FDC22D;
+	background-color:#1E1D1D;
+	margin:0px;
+	line-height:80px;
+	text-align:center;
+}
+#content h1{
+	color:#C01111;
+	padding:20px;
+	text-align:center;
+}
+#content p:nth-child(4){
+	padding:20px;
+	
+}
+#content img{
+	display:block;
+	height:250px;
+	margin:auto;
+	border-radius:10px;
+}
+
+
