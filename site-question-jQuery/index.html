@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Funny Question</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+
+    <body onload="fix()">
+        <button id='theme' onclick='changeTheme()'>Change Theme</button> 
+        <div id="wrap">
+        	<p id='cauhoi'></p>
+            <div>
+                <p class="an" id="a1" onclick="submitA(this)"></p>
+                <img class="false" src="img/false.png" /><img class="true" src="img/true.png"/>
+            </div>
+            <div>
+                <p class="an" id="a2" onclick="submitA(this)"> </p>
+                <img class="false" src="img/false.png" /><img class="true" src="img/true.png"/>
+            </div>
+            <div>
+                <p class="an" id="a3" onclick="submitA(this)"></p>
+                <img class="false" src="img/false.png" /><img class="true" src="img/true.png"/>
+            </div>
+            <div>
+                <p class="an" id="a4" onclick="submitA(this)"></p>
+                <img class="false" src="img/false.png" /><img class="true" src="img/true.png"/>
+            </div>
+            <p id="go" onclick="control()">Let go</p>
+            <div id='frame'></div>
+            <img id='play-btn' src="img/play.png" onclick="play()"/>
+        </div>
+        <script src="js/script.js"></script>
+        <script src="js/jquery-2.2.3.min.js"></script>
+    </body>
+</html>
