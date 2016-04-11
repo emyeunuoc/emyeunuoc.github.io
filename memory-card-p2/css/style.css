@@ -53,6 +53,8 @@ body{
 	transform:rotateY(180deg);
 }
 .back,.front{
+	-webkit-backface-visibility: hidden; 
+	-moz-backface-visibility: hidden; 
 	backface-visibility:hidden;
 	transition:all 0.3s;
 }
