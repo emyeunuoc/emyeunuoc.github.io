@@ -3,6 +3,7 @@ frontCard= frontCard.concat(frontCard);
 var current=null;
 var time=0;
 var maxScore=frontCard.length/2;
+var counttime;
 function chien(){
 	time=Math.floor(Math.random()*100 + 50);
 	$('#option .dialog p:nth-child(4)').html('Ok bạn có '+time+'giây');
@@ -10,13 +11,13 @@ function chien(){
 	$('#option .dialog button:nth-child(3)').css('pointer-events', 'none');
 		$('#option .dialog button:nth-child(3)').html('Sẵn sàng');
 	var count=3;
-	var counttime=setInterval(function(){
+	var counttime2=setInterval(function(){
 		$('#bg-music').attr('src','sound/po_low.mp3');
 		document.getElementById('bg-music').play();
 		$('#option .dialog button:nth-child(3)').html(count);
 		count--;
 		if(count==-2){
-			clearInterval(counttime);
+			clearInterval(counttime2);
 			$('#option').hide();
 			play();
 		} 
@@ -30,7 +31,7 @@ function replay(){
 	$('#option-win').hide();
 	var current=null;
 	var time=0;
-	var maxScore=frontCard.length;
+	maxScore=frontCard.length/2;
 	$('.grid').replaceWith('');
 	$('#option').show();
 }
@@ -39,7 +40,7 @@ function play(){
 	frontCard = shuffle(frontCard);
 	this.distributeCard();
 	$('#time-bar').attr('max',time);
-	var counttime=setInterval(function(){
+	counttime=setInterval(function(){
 		$('#time-bar').attr('value',time);
 		if(time==0){
 			clearInterval(counttime);
