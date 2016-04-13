@@ -1,0 +1,65 @@
+*{
+	margin:0px;
+	padding:0px;
+	border:0px;
+	box-sizing:border-box;
+}
+body{
+	font-size:14px;
+	line-height:1.4;
+	overflow:scroll;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	background-color:#E9EAED;
+}
+#wrap{
+	width:800px;
+	margin:auto;
+}
+#content{
+	margin-top:80px;
+}
+#content h1:first-child{
+	color:#43609C;
+	text-align:center;	
+}
+#content p:nth-child(2),#content > form > p{
+	color:#43609C;
+	margin: 20px 0px 20px 0px;
+	text-align:left;	
+}
+#firstName, #lastName,#sdt,#email,#date,#month,#year,#submit,#pass {
+	width:30%;
+	line-height:40px;
+	font-size:20px;
+	border:1px solid #ACB2C1;
+	margin-right:2%;;
+	padding:0px 10px 0px 10px;
+	color:black;
+	border-radius:3px;
+	margin-bottom:10px;
+	color:#43609C;
+}
+#sdt,#email,#pass{
+	width:62.5%;
+}
+#date,#month,#year{
+	width:18.3%;
+	margin-right:3.5%;
+	color:#43609C;
+    font: 13.3333px Arial;
+	height:40px;	
+}
+.gender{
+	font-size:14px;
+	color:#43609C;
+	margin:10px 10px 10px 0px;
+}
+#submit{
+	color:#ffffff;
+	background-color:#67ae55;
+	border-color:#3b6e22 ;
+}
+#submit:hover{
+	color:#67ae55;
+	background-color:#ffffff;
+}
