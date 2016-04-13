@@ -1,8 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Maven+Pro);
 *{
 	box-sizing:border-box;
 }
+*{
+	font-family: 'Maven Pro', sans-serif;
+	padding:0px;
+	margin:0px;
+}
+hr{
+	margin:8px 0px 8px 0px;
+}
 a{
-	font-family:"Showcard Gothic";
+	font-family: 'Maven Pro', sans-serif;
 }
 .clr{
 	clear:both;
@@ -132,7 +141,7 @@ body{
 	height:60px;
 }
 #footer-ct{
-	font-family:"Showcard Gothic";
+	font-family: 'Maven Pro', sans-serif;
 	font-size:13px;
 	width:100%;
 	height:100%;
