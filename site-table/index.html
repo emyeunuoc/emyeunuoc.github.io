@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>U</title>
+<link rel="stylesheet" type="text/css" href="font-awesome-4.6.1/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body onLoad="display()">
+	<div id="wrap">
+    	<h1>Danh sách sản phẩm</h1>
+        <table id="table-ds">
+        	<thead>
+            	<th><p>Ảnh sản phẩm</p>
+                	<div class="clr"></div>
+                </th>
+                <th>
+                	<p>Tên sản phẩm</p>
+                    <i class="fa fa-caret-square-o-down" aria-hidden="true" onClick="sortTable(this,'name')"></i>
+                	<div class="clr"></div>
+                </th>
+                <th><p>Mã sản phẩm</p>
+                	<i class="fa fa-caret-square-o-down" aria-hidden="true"  onClick="sortTable(this,'code')"></i>
+                	<div class="clr"></div>
+                </th>
+                <th>
+                	<p>Gía tiền</p>
+                    <i class="fa fa-caret-square-o-down" aria-hidden="true"  onClick="sortTable(this,'price')"></i>
+                	<div class="clr"></div>
+                </th>
+                <th>
+                	<p>Số lượng</p>
+                    <i class="fa fa-caret-square-o-down" aria-hidden="true"  onClick="sortTable(this,'quan')"></i>
+                	<div class="clr"></div>
+                </th>
+            </thead>
+            
+        </table>
+    </div>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+*{
+	margin:0px;
+	padding:0px;
+	border:0px;
+	box-sizing:border-box;
+}
+.clr{
+	clear:both;
+}
+body{
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	background-image:url(../img/bg.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+}
+#wrap{
+	width:1200px;
+	margin:auto;
+}
+#wrap h1{
+	text-align:center;
+	margin-bottom:20px;
+	color:#ffffff;
+}
+#table-ds , td,th{
+	border:1px solid #ddd;
+	border-collapse:collapse;
+}
+#table-ds{
+	width:100%;
+}
+#table-ds td,th{
+	width:20%;
+	padding:15px;
+	overflow:hidden;
+}
+#table-ds td{
+	width:20%;
+	max-height:20px;
+	overflow:hidden;
+}
+#table-ds th i{
+	text-align:right;
+	float:right;
+}
+#table-ds th p{
+	float:left;
+}
+#table-ds td img{
+	display:block;
+	margin:auto;
+	height:80px;
+}
+#table-ds th{
+	background-color:#4CAF50;
+	color:#ffffff;
+}
+
+#table-ds tr:nth-child(odd){
+	background-color:#f2f2f2;
+}
+#table-ds tr:nth-child(even){
+	background-color:#ffffff;
+}
+#table-ds tr:hover{
+	background-color:#4CAF50;
+	color:#ffffff;
+}
