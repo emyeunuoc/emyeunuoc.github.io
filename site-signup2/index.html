@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="font-awesome-4.6.1/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+	<div id="wrap">
+    	<div id="content">
+        	<h1>Đăng kí</h1>
+            <p>Bằng thông tin chính xác của bạn để có kết nối thực.</p>
+            <form id="form-register" action="Result.html" method="get" >
+            	<div id="div-hoten">
+                    <input id="firstName" type="text"  placeholder="Họ" name="firstName"/>
+                    <input id="lastName" type="text" placeholder="Tên"  name="lastName"/>
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"><p>Họ và tên không được vượt quá 30 kí tự </p></i>
+                </div>
+                <div id="div-sdt">
+                <input id="sdt" type="text" placeholder="Số điện thoại" name="sdt" />
+                <i class="fa fa-exclamation-triangle" aria-hidden="true"><p>Số điện thoại không tồn tại.10 đến 11 số</p></i>
+                </div>
+                <div id="div-email">
+                	<input id="email" type="email" placeholder="Email" name="email" />
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"><p>Vui lòng nhập đúng địa chỉ email</p></i>
+                </div>
+                <div id="div-fb">
+                	<input id="fb" type="text" placeholder="Địa chỉ Facebook" name="fb" />
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"><p>Vui lòng nhập đúng địa chỉ FaceBook</p></i>
+                </div>
+                <div id="div-pass">
+                	<input id="pass" type="password" placeholder="Password" name="pass" />
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"><p>Mật khẩu lớn hơn 6 và nhỏ hơn 12 kí tự</p></i>
+                </div>
+                <p>Ngày sinh</p>
+                <div id="div-bd">
+                    <select id="date" name="ngay">
+                        <option disabled value="">Ngày <i class="fa fa-sort-desc" aria-hidden="true"></i></option>
+                    </select>
+                    <select id="month" name="thang">
+                        <option disabled value="">Tháng <i class="fa fa-sort-desc" aria-hidden="true"></i></option>
+                    </select>
+                    <select id="year" name="nam">
+                        <option disabled value="">Năm <i class="fa fa-sort-desc" aria-hidden="true"></i></option>
+                    </select>
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"><p>Vui lòng nhập đúng ngày sinh</p></i>
+                </div>
+                <div id="div-gender">
+                    <input  class="gender" type="radio" name="gender" id="nam" value="nam"><label class="gender" for="nam">Nam <i class="fa fa-mars" aria-hidden="true"></i></label>
+                    <input class="gender" type="radio" name="gender" id="nu" value="nu"><label class="gender" for="nu">Nữ <i class="fa fa-venus" aria-hidden="true"></i></label>
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"><p>Vui lòng chọn giới tính</p></i>
+                </div>
+                <p>Bằng cách nhấp vào Đăng ký, bạn đồng ý với Các điều khoản của chúng tôi và rằng bạn đã đọc Chính sách dữ liệu của chúng tôi, bao gồm Sử dụng cookie.</p>
+                <input id="submit" type="submit" value="Đăng kí" >
+            </form>
+        </div>
+    </div>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
