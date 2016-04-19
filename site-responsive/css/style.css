@@ -1,0 +1,139 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;	
+}
+body{
+	background-color:#E9EAEA;
+}
+#wrap{
+	margin:auto;
+}
+#top-header{
+	animation:title 5s linear infinite;
+}
+#top-header h1{
+	text-align:center;
+}
+#content{
+	width:100%;
+	margin:auto;
+}
+.item{
+	width:70%;
+	margin:auto;
+	margin-top:20px;
+}
+.item .item-img{
+	width:100%;
+	height:200px;
+}
+
+.item-text{
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	background-color:#467D3A;
+	color:#ffffff;
+	height:50px;
+	line-height:50px;
+}
+#footer{
+	margin:auto;
+	background-color:#919191;
+	overflow:hidden;
+	clear:both;
+}
+#footer p{
+	animation:creater 5s ease-in-out infinite;
+	font-weight:bold;
+	height:50px;
+	line-height:50px;
+}
+@keyframes creater{
+	0%{color:#ffffff;transform:translate(100%,0);}
+	20%{color:#ffffff;transform:translate(50%,0);}
+	50%{color:#ffffff;transform:translate(50%,0);}
+	100%{color:#919191;transform:translate(0,0);}
+}
+@keyframes title {
+    0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
+}
+@media only screen and (min-width:600px){
+	#top-header h1{
+		height:80px;
+		line-height:80px;
+	}
+	.item .item-img{
+		width:400px;
+		height:400px;
+		margin:auto;
+		display:block;
+	}
+	.item-text{
+		text-align:center;
+		width:400px;
+		margin:auto;
+	}
+	#content{
+		background-color:#ffffff;
+		margin-top:15px;
+	}
+}
+@media only screen and (min-width:800px){
+	#wrap{
+		width:800px;
+	}
+	#top-header{
+		height:100px;
+	}
+	#top-header h1{
+		line-height:100px;
+	}
+	#content{
+		background-color:#ffffff;
+	}
+	.item{
+		width:30%;
+		margin:auto;
+		margin-top:0px;
+		float:left;
+		margin:13px;
+		overflow:hidden;
+		transition:all 0.2s ease-in-out;
+	}
+	.img-wrap{
+		overflow:hidden;
+	}
+	.item .item-img{
+		width:100%;
+		height:250px;
+		transition:all 0.2s ease-in-out;
+	}
+	.item:hover .item-img{
+		transform:scale(1.2);
+		opacity:0.5;
+	}
+	.item:hover .item-text{
+		transform:scale(1.2);
+		background-color:#ffffff;
+		color:#919191;
+	}
+	.item:hover{
+		box-shadow:0px 9px 12px 0px rgba(50, 50, 50, 0.75);
+		transform:translate(0,-10px)
+	}
+	.item-text{
+		width:100%;
+		color:#ffffff;
+		height:50px;
+		line-height:50px;
+		background-color:#919191;
+		transition:all 0.2s ease-in-out;
+		
+	}
+}
