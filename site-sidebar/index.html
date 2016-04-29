@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Side bar</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="font-awesome-4.6.1/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="bxSlider/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="bxSlider/jquery.bxslider.min.js"></script>
+</head>
+
+<body>
+	
+    <div id="wrapper">
+    	<div id="sidebar">
+        	<a href="#" id="sidebar-info">
+            	<img id="sidebar-info-img" src="img/avata.jpg" alt="avata"/>
+                <p id="sidebar-info-name">Welcome,Đức</p>
+                <p id="sidebar-info-des">Font-end developer</p>
+                <div class="clr"></div>
+            </a>
+            <div class="sidebar-items">
+            	<a class="sidebar-items-link" href="#">
+            		<i class="fa fa-tachometer fa-2x sidebar-items-img" aria-hidden="true"></i>
+                    <span class="sidebar-items-link-des">Bảng điều khiển</span>
+                </a>
+            </div>
+            <div class="sidebar-items">
+            	<a class="sidebar-items-link" href="#">
+            		<i class="fa fa-camera-retro  fa-2x sidebar-items-img" aria-hidden="true"></i>
+                    <span class="sidebar-items-link-des">Ảnh</span>
+                </a>
+            </div>
+            <div class="sidebar-items">
+            	<a class="sidebar-items-link" href="#">
+            		<i class="fa fa-bar-chart  fa-2x sidebar-items-img" aria-hidden="true"></i>
+                    <span class="sidebar-items-link-des">Biểu đồ</span>
+                </a>
+            </div>
+            <div class="sidebar-items">
+            	<a class="sidebar-items-link" href="#">
+            		<i class="fa fa-coffee  fa-2x sidebar-items-img" aria-hidden="true"></i>
+                    <span class="sidebar-items-link-des">Góc riêng tư</span>
+                </a>
+            </div>
+            <div class="sidebar-items">
+            	<a class="sidebar-items-link" href="#">
+            		<i class="fa fa-users  fa-2x sidebar-items-img" aria-hidden="true"></i>
+                    <span class="sidebar-items-link-des">Nhóm</span>
+                </a>
+            </div>
+            <div class="sidebar-items">
+            	<a class="sidebar-items-link" href="#">
+            		<i class="fa fa-globe fa-2x sidebar-items-img" aria-hidden="true"></i>         
+                    <span class="badge pull-right navbar-menu-notify">6</span>
+                    <span class="sidebar-items-link-des">Thông báo</span>
+                </a>
+            </div>
+            <div class="sidebar-items">
+            	<a class="sidebar-items-link" href="#">
+            		<i class="fa fa-sign-out  fa-2x sidebar-items-img" aria-hidden="true"></i>
+                    <span class="sidebar-items-link-des">Đăng xuất</span>
+                </a>
+            </div>
+        </div>
+        <header id="header">
+        	<nav class="navbar navbar-default" role="navigation" id="navbar">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="pull-left btn navbar-toggle" id="displaySideBar" >
+						<i class="fa fa-bars " aria-hidden="true"></i>
+                  </button>
+                  <a class="navbar-brand" href="#">Trang chủ</a>
+                </div>
+            
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav" id="navbar-menu">
+                    <li><a href="#">Bảng điều khiển</a></li>
+                    <li><a href="#">Ảnh</a></li>
+                    <li><a href="#">Biểu đồ</a></li>
+                    <li><a href="#">Góc riêng tư</a></li>
+                    <li><a href="#">Nhóm</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" >          
+                    	<i class="fa fa-globe fa-2x" aria-hidden="true"></i> 
+                        <span class="badge pull-right navbar-menu-notify" >6</span> 
+                    </a></li>
+                    <li><a href="#" ><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+                
+              </div><!-- /.container-fluid -->
+            </nav>
+        </header>
+        <section id="content">
+        	<div class="row">
+            	<div class="col-lg-3 col-md-2 col-sm-1 col-xs-1"></div>
+            	<div class="col-lg-6 col-md-8 col-sm-10 col-xs-10">
+                    <ul class="bxslider">
+                      <li><img src="img/slider1.png" /></li>
+                      <li><img src="img/slider2.jpg" /></li>
+                      <li><img src="img/slider3.jpg" /></li>
+                    </ul>
+                </div>
+            	<div class="col-lg-3 col-md-2 col-sm-1 col-xs-1"></div>
+            </div>
+            <h3 style="color:#198764;margin:30px;">Danh sách khóa học</h3>
+            <div id="content-list">
+            	<div class="row">
+                	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 content-list-box">
+                    	<a href="couse-html.html">
+                        	<div class="content-list-box-wrap">
+                            	<img src="img/slider1.jpg" class="content-list-box-img img-responsive "/>
+                            </div>
+                            <p class="content-list-box-title">Khóa học HTML & CSS</p>
+                        </a>
+                    </div>
+                	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 content-list-box">
+                    	<a href="couse-Giaithuat.html">
+                        	<div class="content-list-box-wrap">
+                            	<img src="img/khoa2.jpg" class="content-list-box-img img-responsive "/>
+                            </div>
+                            <p class="content-list-box-title">Cấu trúc dữ liệu giải thuật</p>
+                        </a>
+                    </div>
+                	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 content-list-box">
+                    	<a href="couse-objC.html">
+                        	<div class="content-list-box-wrap">
+                            	<img src="img/khoa3.jpg" class="content-list-box-img img-responsive "/>
+                            </div>
+                            <p class="content-list-box-title">Lập trình iOS Objective-C</p>
+                        </a>
+                    </div>
+                	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 content-list-box">
+                    	<a href="couse-swift.html">
+                        	<div class="content-list-box-wrap">
+                            	<img src="img/khoa4.jpg" class="content-list-box-img img-responsive "/>
+                            </div>
+                            <p class="content-list-box-title">Lập trình di động iOS Swift </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer" class="container-fluid">
+        	<address>
+            	<h3>My mama don't like you but she like everyone<br>Hanoi,VietNam</h3>
+            </address>
+        </footer>
+    </div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>

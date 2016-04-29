@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cấu trúc dữ liệu và giải thuật</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+<link rel="stylesheet" type="text/css" href="font-awesome-4.6.1/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="bxSlider/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/styleCouse.css">
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="bxSlider/jquery.bxslider.min.js"></script>
+</head>
+
+<body>
+	
+    <div id="wrapper">
+    	<div id="sidebar">
+        	<a href="#" id="sidebar-info">
+            	<img id="sidebar-info-img" src="img/avata.jpg" alt="avata"/>
+                <p id="sidebar-info-name">Welcome,Đức</p>
+                <p id="sidebar-info-des">Font-end developer</p>
+                <div class="clr"></div>
+            </a>
+            <div class="sidebar-items">
+            	<a class="sidebar-items-link" href="#">
+            		<i class="fa fa-tachometer fa-2x sidebar-items-img" aria-hidden="true"></i>
+                    <span class="sidebar-items-link-des">Bảng điều khiển</span>
+                </a>
+            </div>
+            <div class="sidebar-items">
+            	<a class="sidebar-items-link" href="#">
+            		<i class="fa fa-camera-retro  fa-2x sidebar-items-img" aria-hidden="true"></i>
+                    <span class="sidebar-items-link-des">Ảnh</span>
+                </a>
+            </div>
+            <div class="sidebar-items">
+            	<a class="sidebar-items-link" href="#">
+            		<i class="fa fa-bar-chart  fa-2x sidebar-items-img" aria-hidden="true"></i>
+                    <span class="sidebar-items-link-des">Biểu đồ</span>
+                </a>
+            </div>
+            <div class="sidebar-items">
+            	<a class="sidebar-items-link" href="#">
+            		<i class="fa fa-coffee  fa-2x sidebar-items-img" aria-hidden="true"></i>
+                    <span class="sidebar-items-link-des">Góc riêng tư</span>
+                </a>
+            </div>
+            <div class="sidebar-items">
+            	<a class="sidebar-items-link" href="#">
+            		<i class="fa fa-users  fa-2x sidebar-items-img" aria-hidden="true"></i>
+                    <span class="sidebar-items-link-des">Nhóm</span>
+                </a>
+            </div>
+            <div class="sidebar-items">
+            	<a class="sidebar-items-link" href="#">
+            		<i class="fa fa-globe fa-2x sidebar-items-img" aria-hidden="true"></i>         
+                    <span class="badge pull-right navbar-menu-notify">6</span>
+                    <span class="sidebar-items-link-des">Thông báo</span>
+                </a>
+            </div>
+            <div class="sidebar-items">
+            	<a class="sidebar-items-link" href="#">
+            		<i class="fa fa-sign-out  fa-2x sidebar-items-img" aria-hidden="true"></i>
+                    <span class="sidebar-items-link-des">Đăng xuất</span>
+                </a>
+            </div>
+        </div>
+        <header id="header">
+        	<nav class="navbar navbar-default" role="navigation" id="navbar">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="pull-left btn navbar-toggle" id="displaySideBar" >
+						<i class="fa fa-bars " aria-hidden="true"></i>
+                  </button>
+                  <a class="navbar-brand" href="index.html">Trang chủ</a>
+                </div>
+            
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav" id="navbar-menu">
+                    <li><a href="#">Bảng điều khiển</a></li>
+                    <li><a href="#">Ảnh</a></li>
+                    <li><a href="#">Biểu đồ</a></li>
+                    <li><a href="#">Góc riêng tư</a></li>
+                    <li><a href="#">Nhóm</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" >          
+                    	<i class="fa fa-globe fa-2x" aria-hidden="true"></i> 
+                        <span class="badge pull-right navbar-menu-notify" >6</span> 
+                    </a></li>
+                    <li><a href="#" ><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+                
+              </div><!-- /.container-fluid -->
+            </nav>
+        </header>
+        <section id="content">
+        	<div class="row">
+            	<div class="col-lg-8 col-md-9 col-sm-9 col-xs-12" id="content-main">
+                	<h3>Giới thiệu</h3>
+                    <hr>
+                    <article id="content-main-post">
+                    	<img src="img/khoa2.jpg" class="img-thumbnail"/>
+                    	<h1>Khai giảng 28/4/2016. Học tại cơ sở 1, 14 ngõ 4, Nguyễn Đình Chiểu, Hà nội. Thứ 2 - thứ 5</h1>
+                        <p><strong>Cấu trúc dữ liệu và giải thuật</strong> là môn học căn bản nhưng là ác mộng của hơn 80% sinh viên học chuyên ngành công nghệ thông tin. Bài giảng trên lớp nhanh, ít ví dụ minh họa, ít thực hành. Sinh viên tự phải xoay sở lập trình bài tập để nộp.<br />
+            <br />
+            Tất cả các trung tâm đào tạo nghề tin học tại Việt Nam không dạy <strong>cấu trúc dữ liệu - giải thuật</strong>. Học viên được đào tạo kỹ năng lập trình viết ứng dụng web hoặc di động để đảm bảo&nbsp;có&nbsp;việc làm ngay. Tuy nhiên tình thế đã thay đổi, nhu cầu về các kỹ sư phần mềm thực thụ cho xử lý dữ liệu lớn (big data), máy học (<a href="http://techmaster.vn/khoa-hoc/25511/nhap-mon-machine-learning" target="_blank">machine learning</a>) hoặc tối ưu các hệ thống thương mại điện tử, điều hành giao thông, xử lý ảnh, xử lý ngôn ngữ tự nhiên. Việc lập trình thành thạo các thư viện framework có sẵn là chưa đủ, mà cần phải giải quyết nhiều bài toán thực tế chưa có framework nào cung cấp sẵn, tạo cấu trúc dữ liệu mới tối ưu hơn.</p>
+            
+            <p>Khóa học <strong>"Cấu trúc dữ liệu giải thuật thực tế - dễ học"</strong> được thiết kế để lập trình viên đang yếu hoặc có ít kiến thức về thuật toán có thể hiểu và sử dụng tương đối thoải mái. Bằng ví dụ thực tế, bài tập từ dễ đến khó, minh họa trực quan giảng viên sẽ cùng học viên đi qua các cấu trúc dữ liệu và ứng dụng của nó trong các thuật toán. Khóa học trong&nbsp;18 buổi, &nbsp;thứ 3 và thứ 7. Mỗi buổi 3 tiếng từ 6:30 đến 9:30, nghỉ giữa giờ 8:00 - 8:15.</p>
+            
+            <p>Học viên yêu cầu đã biết lập trình căn bản tối thiểu 6 tháng: sinh viên CNTT, cao đẳng, Aptech, NIIT hoặc tự học lập trình. Ngôn ngữ lập trình minh họa C (60%), <a href="http://techmaster.vn/khoa-hoc/25469/c-co-ban-qua-vi-du" target="_blank">C++</a> (40%). Sử dụng thư viện đồ họa SDL, SFML hoặc OpenFramework để minh họa&nbsp;bước chạy thuật toán.</p>
+            
+            <p>Giảng viên <a href="https://vinacode.net/2016/03/07/lap-trinh-vien-viet-nam-gioi-cau-truc-du-lieu-va-giai-thuat/" target="_blank">Nguyễn Đức Anh</a>, nhiều lần đoạt giải cao tại các cuộc thi Olymic tin học, hiện đang làm việc trong lĩnh vực <a href="http://techmaster.vn/khoa-hoc/25511/nhap-mon-machine-learning" target="_blank">Machine Learning</a> tại một công ty nội dung số Internet.</p>
+                    </article>
+				<a href="#" class="btn btn-danger" id="content-main-post-regis" >Đăng kí ngay</a>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-3 col-xs-12 list-group" id="listGroup">
+                	<a href="#" class="list-group-item active" id="content-listGroup-title" style="background-color:#1D9C73;">
+                        <h4 class="list-group-item-heading">Các khóa học khác</h4>
+                    </a>
+					<a href="couse-objC.html" class="list-group-item content-listGroup-items">
+                        <img src="img/khoa3.jpg" class="img-rounded"/>
+                        <div class="content-listGroup-items-des">
+                        	<p>Lập trình iOS Objective-C</p>
+                        </div>
+                        <div class="clr"></div>
+                    </a>
+					<a href="couse-swift.html" class="list-group-item content-listGroup-items">
+                        <img src="img/khoa4.jpg" class="img-rounded"/>
+                        <div class="content-listGroup-items-des">
+                        	<p>Lập trình di động iOS Swift</p>
+                        </div>
+                        <div class="clr"></div>
+                    </a>
+					<a href="couse-html.html" class="list-group-item content-listGroup-items">
+                        <img src="img/slider1.jpg" class="img-rounded"/>
+                        <div class="content-listGroup-items-des">
+                        	<p>Khóa học HTML & CSS</p>
+                        </div>
+                        <div class="clr"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer id="footer" class="container-fluid">
+        	<address>
+            	<h3>My mama don't like you but she like everyone<br>Hanoi,VietNam</h3>
+            </address>
+        </footer>
+    </div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
