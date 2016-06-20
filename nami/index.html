@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="font-awesome-4.6.1/css/font-awesome.min.css"/>
+<title>MemoryCard</title>
+</head>
+
+<body onload="" style="overflow:hidden" >
+	<audio id="bg-music" >
+    	<source src="" />
+    </audio>
+    <audio  id="bg-music2" controls="controls" style="position:absolute;z-index:2;right:-255px" >
+    	<source  src="sound/Reality Feat Janieck Devy - Lost Frequencies.mp3" />
+    </audio>
+	<div id="wrap">
+    	<div id="content">
+        	<progress id='time-bar'  ></progress>
+        	<div id='option'>
+            	<div class='dialog'>
+                	<p>Mình là NaMi </p>
+                    <p>Các thanh niên nào muốn làm quen với chụy thì hãy vượt qua bài test não này ha ;))</p>
+                    <button onclick="chien()"><i class="fa  fa-heartbeat  " aria-hidden="true"></i>
+                    <i class="fa fa-spinner  fa-spin" aria-hidden="true"></i>
+                    </button>
+                    <p>Ok! Bạn có 30 giây</p>
+                </div>
+            </div>
+            <div id='option-win'>
+            	<div class='dialog'>
+                	<p>Vãi đái</p>
+                    <p>Khôn ghê!</p>
+                    <button onclick="replay()">Hay thích chơi lại</button>
+                    <a href="https://www.facebook.com/messages/trangmivip">Click vô đây đi my boy</a>
+                </div>
+            </div>
+            <div id='option-lose'>
+            	<div class='dialog'>
+                	<p>Dễ vđ mà cũng đell qua đc</p>
+                    <p>Hoy phiên phiến đi nha!</p>
+                    <button onclick="replay()">Chơi lại</button>
+                    <p>Gợi ý : có gợi ý vs cũng thế :/ </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+</body>
+</html>
